@@ -10,37 +10,61 @@
 <body>
   <header>
     <span>ToDOM</span>
-    <button>
+    
+    <button id="addTask">
       <img src="assets/addition.svg" alt="">
       <span>Adicionar</span>
     </button>
+
+    
   </header>
+  
+  <div class="dialogBox">
+      <div class="modal">
+        <div class="homeModal">
+          <span>Adicionar Item</span>
+          <button>
+            <img src="assets/close.svg" alt="">
+          </button>
+        </div>
+
+        <div class="formModal">
+          <form action="">
+            <label for="">Descrição</label>
+            <input type="text">
+          </form>
+        </div>
+
+        <button type="submit"> Adicionar </button>
+      </div>
+  </div>
 
   <main>
     <fieldset>
       <legend>Lista à fazer</legend>
+      <ul>
+        <li class="list" id="1">
+          <p>Criar site </p>
+          <button>
+            <img src="assets/trash.svg" alt="">
+          </button>
+        </li>
+  
+        <li class="list" id="2">
+          <p>Criar site </p>
+          <button>
+            <img src="assets/trash.svg" alt="">
+          </button>
+        </li>
+  
+         <li class="list" id="3">
+          <p>Criar site </p>
+          <button>
+            <img src="assets/trash.svg" alt="">
+          </button>
+        </li>
+      </ul>
 
-      <div class="list" id="1">
-        <p>Criar site </p> 
-        <button> 
-          <img src="assets/trash.svg" alt="">
-        </button>
-      </div>
-
-      <div class="list" id="2">
-        <p>Criar site </p> 
-        <button> 
-          <img src="assets/trash.svg" alt="">
-        </button>
-      </div>
-
-       <div class="list" id="3">
-        <p>Criar site </p> 
-        <button> 
-          <img src="assets/trash.svg" alt="">
-        </button>
-      </div>
-      
     </fieldset>
   </main>
 
@@ -48,6 +72,8 @@
   <footer>
     <span>Feito por Lucas</span>
   </footer>
+
+  <script src="script.js"></script>
 
 </body>
 </html>

@@ -56,7 +56,7 @@ main {
       margin-bottom: 1rem;
     }
   
-    min-height: 50rem;
+    height: 80vh; /* eu não consegui fazer o body congelar no fim da página */
     border: none;
   }
 
@@ -84,7 +84,74 @@ main {
     }
   }
 
+}
 
+.dialogBox {
+  position: absolute; 
+
+  transform: translate(-50%, -50%);
+  display: none;
+  
+  
+  & .modal {
+    width: 18rem;
+    height: 14rem;
+
+    position: relative;
+    top: 12.5rem;
+    left: 41rem;
+    
+
+    border: 1px solid black;
+    background-color: white;
+    border-radius: 0.325rem;
+
+    padding: 1rem;
+    display: grid;
+
+    & .homeModal {
+      margin-bottom: 2rem;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+
+      & span {
+        font-weight: 600;
+      }
+
+      & button {
+          background-color: white;
+
+        border: none;
+
+        img {
+          width: 1rem;
+          aspect-ratio: 1 / 1;
+          }
+      }
+    }
+
+    & .formModal {
+      margin-bottom: 2rem;
+
+      & form {
+        display: grid;
+      }
+    }
+
+    & button {
+      background-color: rgba(7, 204, 7, 0.863);
+      color: white;
+      border: none;
+      border-radius: 0.225rem;
+
+      height: 1.5rem;
+    }
+
+  }
+
+  
 }
 
 footer {
