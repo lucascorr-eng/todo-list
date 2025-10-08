@@ -140,7 +140,9 @@ main {
       }
     }
 
-    & button {
+    & form .newTask {
+      margin-top: 2rem;
+
       background-color: rgba(7, 204, 7, 0.863);
       color: white;
       border: none;

@@ -23,43 +23,30 @@
       <div class="modal">
         <div class="homeModal">
           <span>Adicionar Item</span>
-          <button>
+          <button type="button" class="close">
             <img src="assets/close.svg" alt="">
           </button>
         </div>
 
         <div class="formModal">
-          <form action="">
-            <label for="">Descrição</label>
-            <input type="text">
+          <form id="formAdd" method="post">
+            <label for="descInput">Descrição</label>
+            <input id="descInput" name="desc" type="text" required>
+
+            <button type="submit" class="newTask"> Adicionar </button>
           </form>
         </div>
-
-        <button type="submit"> Adicionar </button>
+        
       </div>
   </div>
 
   <main>
     <fieldset>
       <legend>Lista à fazer</legend>
-      <ul>
+      <ul id="toDoList">
         <li class="list" id="1">
           <p>Criar site </p>
-          <button>
-            <img src="assets/trash.svg" alt="">
-          </button>
-        </li>
-  
-        <li class="list" id="2">
-          <p>Criar site </p>
-          <button>
-            <img src="assets/trash.svg" alt="">
-          </button>
-        </li>
-  
-         <li class="list" id="3">
-          <p>Criar site </p>
-          <button>
+          <button id="deleteList">
             <img src="assets/trash.svg" alt="">
           </button>
         </li>
